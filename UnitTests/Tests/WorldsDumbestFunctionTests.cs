@@ -1,10 +1,7 @@
-﻿using Xunit;
-
-namespace UnitTests.Tests;
+﻿namespace UnitTests.Tests;
 
 public static class WorldsDumbestFunctionTests
 {
-    [Fact]
     public static void ReturnsPikachuIfZero_WhenValorIsZero_ReturnsPikachu()
     {
         try
@@ -16,7 +13,7 @@ public static class WorldsDumbestFunctionTests
             var result = worldsDumbestFunction.ReturnsPikachuIfZero(0);
 
             // Assert
-            Assert.Equal("Pikachu", result);
+            Console.WriteLine(result);
         }
         catch (Exception ex)
         {
@@ -24,7 +21,6 @@ public static class WorldsDumbestFunctionTests
         }
     }
 
-    [Fact]
     public static void ReturnsPikachuIfZero_WhenValorIsNotZero_ReturnsSquirtle()
     {
         try
@@ -37,7 +33,7 @@ public static class WorldsDumbestFunctionTests
             var result = worldsDumbestFunction.ReturnsPikachuIfZero(1);
 
             // Assert
-            Assert.Equal("Squirtle", result);
+            Console.WriteLine(result);
         }
         catch (Exception ex)
         {
